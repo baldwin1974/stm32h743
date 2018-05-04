@@ -1,5 +1,5 @@
 [package]
-name = "stm3h743"
+name = "stm32h743"
 version = "0.1.0"
 authors = ["baldwinrobertson"]
 categories = ["embedded", "no-std"]
