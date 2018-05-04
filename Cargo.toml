@@ -1,0 +1,23 @@
+[package]
+name = "stm3h743"
+version = "0.1.0"
+authors = ["baldwinrobertson"]
+categories = ["embedded", "no-std"]
+
+[dependencies]
+cortex-m = "0.4.3"
+bare-metal = "0.1.2"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+version = "0.4.0"
+
+[dependencies.cortex-m-semihosting]
+version = "0.2.0"
+
+[dependencies.panic-abort]
+version = "0.1.1"
+
+[dependencies.panic-semihosting]
+version = "0.1.0"
+
