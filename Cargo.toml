@@ -5,7 +5,7 @@ authors = ["baldwinrobertson"]
 categories = ["embedded", "no-std"]
 repository = "https://github.com/baldwin1974/stm32h743"
 license = "MIT OR Apache-2.0"
-
+description = "A peripheral API created (using svd2rust) for the STM32H743ZI"
 
 [dependencies]
 cortex-m = "0.4.3"
