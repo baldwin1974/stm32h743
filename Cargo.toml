@@ -3,6 +3,9 @@ name = "stm3h743"
 version = "0.1.0"
 authors = ["baldwinrobertson"]
 categories = ["embedded", "no-std"]
+repository = "https://github.com/baldwin1974/stm32h743"
+license = "MIT OR Apache-2.0"
+
 
 [dependencies]
 cortex-m = "0.4.3"
