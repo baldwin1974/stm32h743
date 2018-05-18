@@ -5,16 +5,9 @@ Documentation can be built with the following command if you git clone the repos
 
     xargo/cargo doc --lib --target thumbv7em-none-eabihf
 
-Please note that openocd's latest version does not contain a config (.cfg) script for the ST-Nucleo-144 for STM32H743. Here is a successful (so far!) script that you can use. Place the file called openocd.cfg in your project directory and the file called stm32h7x3.cfg into the "target" folder found within openocd's scripts directory. For me, that directory was found in /usr/local/Cellar/open-ocd/0.10.0/share/openocd/scripts - but that is because I am using a mac, and I installed openocd using homebrew. I also found it necessary to add that folder to my PATH variable. 
+The latest version of openocd includes .cfg files for both the NUCLEO-144 board and for the STM32H7x chips. On macosx, homebrew will not install the latest version of openocd unless you direct to do so this way:
 
-Once you have installed those two scripts in the two appropriate places, and perhaps adjusted the PATH variable, call openocd from that directory, as follows:
+    brew install --HEAD openocd
 
-    openocd
-
-Or, if you are not in the project directory and want to call openocd, you can just type
-
-    openocd -f [path to openocd.cfg]
-
-There are other ways to do this and you can peruse the two scripts as you see fit, because I am no expert. Good luck!
-
+Otherwise, using openocd 0.10.0+dev-00410 will allow you to successfully connect to the 'H743.
 
