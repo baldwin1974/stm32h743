@@ -1,6 +1,6 @@
 [package]
 name = "stm32h743"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["baldwinrobertson"]
 categories = ["embedded", "no-std"]
 repository = "https://github.com/baldwin1974/stm32h743"
