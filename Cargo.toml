@@ -8,19 +8,22 @@ license = "MIT OR Apache-2.0"
 description = "A peripheral API created (using svd2rust 0.13.0) for the STM32H743ZI"
 
 [dependencies]
-cortex-m = "0.5.1"
+cortex-m = "0.5.2"
 bare-metal = "0.2.0"
 vcell = "0.1.0"
 
 [dependencies.cortex-m-rt]
+optional = true
 version = "0.5.1"
 
 [dependencies.cortex-m-semihosting]
-version = "0.2.0"
+version = "0.3.0"
 
 [dependencies.panic-abort]
-version = "0.1.1"
-
-[dependencies.panic-semihosting]
 version = "0.2.0"
 
+[dependencies.panic-semihosting]
+version = "0.3.0"
+
+[features]
+rt = ["cortex-m-rt/device"]
