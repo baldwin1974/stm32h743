@@ -12,3 +12,5 @@ The latest version of openocd includes .cfg files for both the NUCLEO-144 board 
 Otherwise, using openocd 0.10.0+dev-00410 will allow you to successfully connect to the 'H743.
 
 Please note: this file contains some "derivedFrom" errors, particularly w/r/t timers and some GPIO.
+
+Further note: I am happy to give up or share this repository with someone, as I no longer do much in Rust.
